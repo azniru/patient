@@ -43,7 +43,7 @@ jobs:
     steps:
     - name: Executing test cases
       run: |
-           echooo " Executing test cases"
+           echo " Executing test cases"
           
   deploy:
     runs-on: ubuntu-latest
