@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: rhythmxregistry.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_f8a7b78fd19540ccb4afb85c46e16fa9 }}/patientservices:${{ github.sha }}
+        tags: rhythmxregistry.azurecr.io/patientservices:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
