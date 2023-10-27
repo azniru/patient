@@ -48,4 +48,4 @@ jobs:
         app-name: 'rhywebapp'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_4c3fb371769f47c78adad4fbff675053 }}
-        images: 'rhythmxregistry.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_f8a7b78fd19540ccb4afb85c46e16fa9 }}/patientservices:${{ github.sha }}'
+        images: 'rhythmxregistry.azurecr.io/patientservices:${{ github.sha }}'
